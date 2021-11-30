@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<form action=" {% url 'first' %}">
+    <label for="1">First number:</label>
+    <input type="text" name="number_1" id="1"><br>
+    <label for="2">Operator:</label>
+    <select id="2" name="operator">
+        <option value="+">Add</option>
+        <option value="*">Multiply</option>
+        <option value="-">Subtract</option>
+        <option value="/">Divide</option>
+    </select><br>
+    <label for="3">Second number:</label>
+    <input type="text" name="number_2" id="3"><br>
+    <input type="submit" value="Submit">
+</form>
+
+
+
+{% block content %}
+{% endblock %}
+
+
+</body>
